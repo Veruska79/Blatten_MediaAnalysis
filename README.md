@@ -67,7 +67,7 @@ result_df, summary = evaluate_frames(df=df2, human_col="frames_manual", llm_col=
                                       output_path=..., plot_dir=...)
 ```
 
-### 7. Downstream analysis — [`ContentAnalysis&Summarisation_ver2.ipynb`](ContentAnalysis&Summarisation_ver2.ipynb)
+### 7. Downstream analysis — [`ContentAnalysis_Summarisation_ver2.ipynb`](ContentAnalysis_Summarisation_ver2.ipynb)
 Takes the final tagged/translated dataset and runs:
 - corpus characteristics (language, media type)
 - hazard/event and DRM-strategy co-occurrence analysis
