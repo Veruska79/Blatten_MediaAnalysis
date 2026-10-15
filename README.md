@@ -67,19 +67,18 @@ result_df, summary = evaluate_frames(df=df2, human_col="frames_manual", llm_col=
                                       output_path=..., plot_dir=...)
 ```
 
-### 7. Downstream analysis — [`ContentAnalysis&Summarisation.ipynb`](ContentAnalysis&Summarisation.ipynb)
+### 7. Downstream analysis — [`ContentAnalysis&Summarisation_ver2.ipynb`](ContentAnalysis&Summarisation_ver2.ipynb)
 Takes the final tagged/translated dataset and runs:
 - corpus characteristics (language, media type)
 - hazard/event and DRM-strategy co-occurrence analysis
-- TF-IDF + NMF topic modelling, t-SNE visualization, keyword tagging
-- geoparsing
-- (optional) BERTopic
+- TF-IDF + NMF topic modelling, t-SNE visualization, keyword tagging, temporal analysis
 
-Related notebooks:
-- [`Summarisation_NewsBlatten_frames.ipynb`](Summarisation_NewsBlatten_frames.ipynb) — LangChain summarisation
-  chains (stuff / map-reduce) over the extracted frames.
-- [`NLP_VariousTasks.ipynb`](NLP_VariousTasks.ipynb) — additional NLP tasks on the
-  classified/relevant subset.
+### 8. Topic number and media source — [`MediaSource_TopicNumber_Evaluation.ipynb`](MediaSource_TopicNumber_Evaluation.ipynb)
+Analysis of topic models
+- implements various test to establish a robust number of topics
+- analyses the media outlets hazard/event and DRM-strategy co-occurrence analysis
+
+
 
 ## Data flow summary
 
@@ -105,7 +104,7 @@ closed-vocab structured extraction
 final tagged dataset
    │  ContentAnalysis&Summarisation.ipynb
    ▼
-topic modelling, co-occurrence analysis, summarisation
+topic modelling, co-occurrence analysis, summarisation, temporal evolution
 ```
 
 ## Requirements
